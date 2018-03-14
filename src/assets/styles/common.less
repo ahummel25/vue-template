@@ -1,0 +1,22 @@
+@import "vars";
+
+#wrapper {
+  background-color: @nearWhite;
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.is-old-browser {
+  #wrapper {
+    display: none;
+  }
+}
+
+#content-main {
+  padding-top: @contentMainOffset;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
